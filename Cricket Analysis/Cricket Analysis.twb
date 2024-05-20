@@ -1,0 +1,1122 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20222.22.0624.2136                               -->
+<workbook original-version='18.1' source-build='2022.2.0 (20222.22.0624.2136)' source-platform='win' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <_.fcp.AnimationOnByDefault.true...AnimationOnByDefault />
+    <_.fcp.MarkAnimation.true...MarkAnimation />
+    <_.fcp.ObjectModelEncapsulateLegacy.true...ObjectModelEncapsulateLegacy />
+    <_.fcp.ObjectModelTableType.true...ObjectModelTableType />
+    <_.fcp.SchemaViewerObjectModel.true...SchemaViewerObjectModel />
+    <SheetIdentifierTracking />
+    <SortTagCleanup />
+    <WindowsPersistSimpleIdentifiers />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <_.fcp.AnimationOnByDefault.false...style>
+    <_.fcp.AnimationOnByDefault.false..._.fcp.MarkAnimation.true...style-rule element='animation'>
+      <_.fcp.AnimationOnByDefault.false...format attr='animation-on' value='ao-on' />
+    </_.fcp.AnimationOnByDefault.false..._.fcp.MarkAnimation.true...style-rule>
+  </_.fcp.AnimationOnByDefault.false...style>
+  <datasources>
+    <datasource caption='ipl_data24_ver17+' inline='true' name='federated.0qxcya41k5h7p81gjyrrn1p1atqc' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='ipl_data24_ver17' name='textscan.1735cop0vymj1r1b7pjkd0uqv8vn'>
+            <connection class='textscan' directory='D:/Cricket Analysis' filename='ipl_data24_ver17.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <_.fcp.ObjectModelEncapsulateLegacy.false...relation connection='textscan.1735cop0vymj1r1b7pjkd0uqv8vn' name='IPL23dataset.csv' table='[IPL23dataset#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+            <column datatype='integer' name='Match Number' ordinal='0' />
+            <column datatype='string' name='Date' ordinal='1' />
+            <column datatype='string' name='Toss winning team' ordinal='2' />
+            <column datatype='string' name='Toss Decision' ordinal='3' />
+            <column datatype='string' name='Batting First' ordinal='4' />
+            <column datatype='integer' name='First Innings Score' ordinal='5' />
+            <column datatype='integer' name='Wickets Lost' ordinal='6' />
+            <column datatype='real' name='Overs in First innings' ordinal='7' />
+            <column datatype='string' name='Batting Second' ordinal='8' />
+            <column datatype='integer' name='Second Innings Score' ordinal='9' />
+            <column datatype='integer' name='Wickets Lost (2)' ordinal='10' />
+            <column datatype='real' name='Overs in Second innings' ordinal='11' />
+            <column datatype='string' name='Winning Team' ordinal='12' />
+            <column datatype='string' name='Won By' ordinal='13' />
+            <column datatype='string' name='Venue' ordinal='14' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.false...relation>
+        <_.fcp.ObjectModelEncapsulateLegacy.true...relation type='collection'>
+          <relation connection='textscan.1735cop0vymj1r1b7pjkd0uqv8vn' name='IPL23dataset.csv' table='[IPL23dataset#csv]' type='table'>
+            <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+              <column datatype='integer' name='Match Number' ordinal='0' />
+              <column datatype='string' name='Date' ordinal='1' />
+              <column datatype='string' name='Toss winning team' ordinal='2' />
+              <column datatype='string' name='Toss Decision' ordinal='3' />
+              <column datatype='string' name='Batting First' ordinal='4' />
+              <column datatype='integer' name='First Innings Score' ordinal='5' />
+              <column datatype='integer' name='Wickets Lost' ordinal='6' />
+              <column datatype='real' name='Overs in First innings' ordinal='7' />
+              <column datatype='string' name='Batting Second' ordinal='8' />
+              <column datatype='integer' name='Second Innings Score' ordinal='9' />
+              <column datatype='integer' name='Wickets Lost (2)' ordinal='10' />
+              <column datatype='real' name='Overs in Second innings' ordinal='11' />
+              <column datatype='string' name='Winning Team' ordinal='12' />
+              <column datatype='string' name='Won By' ordinal='13' />
+              <column datatype='string' name='Venue' ordinal='14' />
+            </columns>
+          </relation>
+          <relation connection='textscan.1735cop0vymj1r1b7pjkd0uqv8vn' name='ipl_data24_ver17.csv' table='[ipl_data24_ver17#csv]' type='table'>
+            <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+              <column datatype='integer' name='Match Number' ordinal='0' />
+              <column datatype='string' name='Date' ordinal='1' />
+              <column datatype='string' name='Toss winning team' ordinal='2' />
+              <column datatype='string' name='Toss Decision' ordinal='3' />
+              <column datatype='string' name='Batting First' ordinal='4' />
+              <column datatype='integer' name='First Innings Score' ordinal='5' />
+              <column datatype='integer' name='Wickets Lost' ordinal='6' />
+              <column datatype='real' name='Overs First Innings' ordinal='7' />
+              <column datatype='string' name='Batting Second' ordinal='8' />
+              <column datatype='integer' name='Second Innings Score' ordinal='9' />
+              <column datatype='integer' name='Wickets Lost (2)' ordinal='10' />
+              <column datatype='real' name='Overs Second Innings' ordinal='11' />
+              <column datatype='string' name='Winning Team' ordinal='12' />
+              <column datatype='string' name='Won By' ordinal='13' />
+              <column datatype='string' name='Venue' ordinal='14' />
+            </columns>
+          </relation>
+        </_.fcp.ObjectModelEncapsulateLegacy.true...relation>
+        <cols>
+          <map key='[Batting First (ipl_data24_ver17.csv)]' value='[ipl_data24_ver17.csv].[Batting First]' />
+          <map key='[Batting First]' value='[IPL23dataset.csv].[Batting First]' />
+          <map key='[Batting Second (ipl_data24_ver17.csv)]' value='[ipl_data24_ver17.csv].[Batting Second]' />
+          <map key='[Batting Second]' value='[IPL23dataset.csv].[Batting Second]' />
+          <map key='[Date (ipl_data24_ver17.csv)]' value='[ipl_data24_ver17.csv].[Date]' />
+          <map key='[Date]' value='[IPL23dataset.csv].[Date]' />
+          <map key='[First Innings Score (ipl_data24_ver17.csv)]' value='[ipl_data24_ver17.csv].[First Innings Score]' />
+          <map key='[First Innings Score]' value='[IPL23dataset.csv].[First Innings Score]' />
+          <map key='[Match Number (ipl_data24_ver17.csv)]' value='[ipl_data24_ver17.csv].[Match Number]' />
+          <map key='[Match Number]' value='[IPL23dataset.csv].[Match Number]' />
+          <map key='[Overs First Innings]' value='[ipl_data24_ver17.csv].[Overs First Innings]' />
+          <map key='[Overs Second Innings]' value='[ipl_data24_ver17.csv].[Overs Second Innings]' />
+          <map key='[Overs in First innings]' value='[IPL23dataset.csv].[Overs in First innings]' />
+          <map key='[Overs in Second innings]' value='[IPL23dataset.csv].[Overs in Second innings]' />
+          <map key='[Second Innings Score (ipl_data24_ver17.csv)]' value='[ipl_data24_ver17.csv].[Second Innings Score]' />
+          <map key='[Second Innings Score]' value='[IPL23dataset.csv].[Second Innings Score]' />
+          <map key='[Toss Decision (ipl_data24_ver17.csv)]' value='[ipl_data24_ver17.csv].[Toss Decision]' />
+          <map key='[Toss Decision]' value='[IPL23dataset.csv].[Toss Decision]' />
+          <map key='[Toss winning team (ipl_data24_ver17.csv)]' value='[ipl_data24_ver17.csv].[Toss winning team]' />
+          <map key='[Toss winning team]' value='[IPL23dataset.csv].[Toss winning team]' />
+          <map key='[Venue (ipl_data24_ver17.csv)]' value='[ipl_data24_ver17.csv].[Venue]' />
+          <map key='[Venue]' value='[IPL23dataset.csv].[Venue]' />
+          <map key='[Wickets Lost (2) (ipl_data24_ver17.csv)]' value='[ipl_data24_ver17.csv].[Wickets Lost (2)]' />
+          <map key='[Wickets Lost (2)]' value='[IPL23dataset.csv].[Wickets Lost (2)]' />
+          <map key='[Wickets Lost (ipl_data24_ver17.csv)]' value='[ipl_data24_ver17.csv].[Wickets Lost]' />
+          <map key='[Wickets Lost]' value='[IPL23dataset.csv].[Wickets Lost]' />
+          <map key='[Winning Team (ipl_data24_ver17.csv)]' value='[ipl_data24_ver17.csv].[Winning Team]' />
+          <map key='[Winning Team]' value='[IPL23dataset.csv].[Winning Team]' />
+          <map key='[Won By (ipl_data24_ver17.csv)]' value='[ipl_data24_ver17.csv].[Won By]' />
+          <map key='[Won By]' value='[IPL23dataset.csv].[Won By]' />
+        </cols>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[IPL23dataset.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Match Number</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Match Number]</local-name>
+            <parent-name>[IPL23dataset.csv]</parent-name>
+            <remote-alias>Match Number</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Date</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Date]</local-name>
+            <parent-name>[IPL23dataset.csv]</parent-name>
+            <remote-alias>Date</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Toss winning team</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Toss winning team]</local-name>
+            <parent-name>[IPL23dataset.csv]</parent-name>
+            <remote-alias>Toss winning team</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Toss Decision</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Toss Decision]</local-name>
+            <parent-name>[IPL23dataset.csv]</parent-name>
+            <remote-alias>Toss Decision</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Batting First</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Batting First]</local-name>
+            <parent-name>[IPL23dataset.csv]</parent-name>
+            <remote-alias>Batting First</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>First Innings Score</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[First Innings Score]</local-name>
+            <parent-name>[IPL23dataset.csv]</parent-name>
+            <remote-alias>First Innings Score</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Wickets Lost</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Wickets Lost]</local-name>
+            <parent-name>[IPL23dataset.csv]</parent-name>
+            <remote-alias>Wickets Lost</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Overs in First innings</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Overs in First innings]</local-name>
+            <parent-name>[IPL23dataset.csv]</parent-name>
+            <remote-alias>Overs in First innings</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Batting Second</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Batting Second]</local-name>
+            <parent-name>[IPL23dataset.csv]</parent-name>
+            <remote-alias>Batting Second</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Second Innings Score</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Second Innings Score]</local-name>
+            <parent-name>[IPL23dataset.csv]</parent-name>
+            <remote-alias>Second Innings Score</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Wickets Lost (2)</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Wickets Lost (2)]</local-name>
+            <parent-name>[IPL23dataset.csv]</parent-name>
+            <remote-alias>Wickets Lost (2)</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Overs in Second innings</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Overs in Second innings]</local-name>
+            <parent-name>[IPL23dataset.csv]</parent-name>
+            <remote-alias>Overs in Second innings</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Winning Team</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Winning Team]</local-name>
+            <parent-name>[IPL23dataset.csv]</parent-name>
+            <remote-alias>Winning Team</remote-alias>
+            <ordinal>12</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Won By</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Won By]</local-name>
+            <parent-name>[IPL23dataset.csv]</parent-name>
+            <remote-alias>Won By</remote-alias>
+            <ordinal>13</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Venue</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Venue]</local-name>
+            <parent-name>[IPL23dataset.csv]</parent-name>
+            <remote-alias>Venue</remote-alias>
+            <ordinal>14</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+          </metadata-record>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[ipl_data24_ver17.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Match Number</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Match Number (ipl_data24_ver17.csv)]</local-name>
+            <parent-name>[ipl_data24_ver17.csv]</parent-name>
+            <remote-alias>Match Number</remote-alias>
+            <ordinal>15</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Date</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Date (ipl_data24_ver17.csv)]</local-name>
+            <parent-name>[ipl_data24_ver17.csv]</parent-name>
+            <remote-alias>Date</remote-alias>
+            <ordinal>16</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Toss winning team</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Toss winning team (ipl_data24_ver17.csv)]</local-name>
+            <parent-name>[ipl_data24_ver17.csv]</parent-name>
+            <remote-alias>Toss winning team</remote-alias>
+            <ordinal>17</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Toss Decision</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Toss Decision (ipl_data24_ver17.csv)]</local-name>
+            <parent-name>[ipl_data24_ver17.csv]</parent-name>
+            <remote-alias>Toss Decision</remote-alias>
+            <ordinal>18</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Batting First</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Batting First (ipl_data24_ver17.csv)]</local-name>
+            <parent-name>[ipl_data24_ver17.csv]</parent-name>
+            <remote-alias>Batting First</remote-alias>
+            <ordinal>19</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>First Innings Score</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[First Innings Score (ipl_data24_ver17.csv)]</local-name>
+            <parent-name>[ipl_data24_ver17.csv]</parent-name>
+            <remote-alias>First Innings Score</remote-alias>
+            <ordinal>20</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Wickets Lost</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Wickets Lost (ipl_data24_ver17.csv)]</local-name>
+            <parent-name>[ipl_data24_ver17.csv]</parent-name>
+            <remote-alias>Wickets Lost</remote-alias>
+            <ordinal>21</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Overs First Innings</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Overs First Innings]</local-name>
+            <parent-name>[ipl_data24_ver17.csv]</parent-name>
+            <remote-alias>Overs First Innings</remote-alias>
+            <ordinal>22</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Batting Second</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Batting Second (ipl_data24_ver17.csv)]</local-name>
+            <parent-name>[ipl_data24_ver17.csv]</parent-name>
+            <remote-alias>Batting Second</remote-alias>
+            <ordinal>23</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Second Innings Score</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Second Innings Score (ipl_data24_ver17.csv)]</local-name>
+            <parent-name>[ipl_data24_ver17.csv]</parent-name>
+            <remote-alias>Second Innings Score</remote-alias>
+            <ordinal>24</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Wickets Lost (2)</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Wickets Lost (2) (ipl_data24_ver17.csv)]</local-name>
+            <parent-name>[ipl_data24_ver17.csv]</parent-name>
+            <remote-alias>Wickets Lost (2)</remote-alias>
+            <ordinal>25</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Overs Second Innings</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Overs Second Innings]</local-name>
+            <parent-name>[ipl_data24_ver17.csv]</parent-name>
+            <remote-alias>Overs Second Innings</remote-alias>
+            <ordinal>26</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Winning Team</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Winning Team (ipl_data24_ver17.csv)]</local-name>
+            <parent-name>[ipl_data24_ver17.csv]</parent-name>
+            <remote-alias>Winning Team</remote-alias>
+            <ordinal>27</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Won By</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Won By (ipl_data24_ver17.csv)]</local-name>
+            <parent-name>[ipl_data24_ver17.csv]</parent-name>
+            <remote-alias>Won By</remote-alias>
+            <ordinal>28</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Venue</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Venue (ipl_data24_ver17.csv)]</local-name>
+            <parent-name>[ipl_data24_ver17.csv]</parent-name>
+            <remote-alias>Venue</remote-alias>
+            <ordinal>29</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='Batting First (ipl data24 ver17.csv)' datatype='string' name='[Batting First (ipl_data24_ver17.csv)]' role='dimension' type='nominal' />
+      <column caption='Batting Second (ipl data24 ver17.csv)' datatype='string' name='[Batting Second (ipl_data24_ver17.csv)]' role='dimension' type='nominal' />
+      <column caption='RR 2023(1)' datatype='real' datatype-customized='true' name='[Calculation_1174313616832671748]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='WINDOW_AVG(SUM([First Innings Score]) / SUM([Overs in First innings]), 0, 40)'>
+          <table-calc ordering-type='Rows' />
+        </calculation>
+      </column>
+      <column caption='RR 2024(1)' datatype='real' datatype-customized='true' name='[Calculation_1174313616832950277]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='WINDOW_AVG(SUM([First Innings Score (ipl_data24_ver17.csv)]) / SUM([Overs First Innings]), 0, 40)'>
+          <table-calc ordering-type='Rows' />
+        </calculation>
+      </column>
+      <column caption='RR 2023(2)' datatype='real' datatype-customized='true' name='[Calculation_1174313616835407878]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='WINDOW_AVG(SUM([Second Innings Score]) / SUM([Overs in Second innings]), 0, 40)'>
+          <table-calc ordering-type='Rows' />
+        </calculation>
+      </column>
+      <column caption='RR 2024(2)' datatype='real' datatype-customized='true' name='[Calculation_1174313616835686407]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='WINDOW_AVG(SUM([First Innings Score (ipl_data24_ver17.csv)]) / SUM([Overs Second Innings]), 0, 40)'>
+          <table-calc ordering-type='Rows' />
+        </calculation>
+      </column>
+      <column caption='Avg  2023(1)' datatype='real' datatype-customized='true' name='[Calculation_1174313616837283848]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='WINDOW_AVG(SUM([First Innings Score]) / 40, 0, 40)'>
+          <table-calc ordering-type='Rows' />
+        </calculation>
+      </column>
+      <column caption='Avg 2024(1)' datatype='real' datatype-customized='true' name='[Calculation_1174313616839692297]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='WINDOW_AVG(SUM([First Innings Score (ipl_data24_ver17.csv)]) / 40, 0, 40)'>
+          <table-calc ordering-type='Rows' />
+        </calculation>
+      </column>
+      <column caption='Avg 2023(2)' datatype='real' datatype-customized='true' name='[Calculation_1174313616840572938]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='WINDOW_AVG(SUM([Second Innings Score]) / 40, 0, 40)'>
+          <table-calc ordering-type='Rows' />
+        </calculation>
+      </column>
+      <column caption='Avg 2024(2)' datatype='real' datatype-customized='true' name='[Calculation_1174313616840708107]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='WINDOW_AVG(SUM([Second Innings Score (ipl_data24_ver17.csv)]) / 40, 0, 40)'>
+          <table-calc ordering-type='Rows' />
+        </calculation>
+      </column>
+      <column caption='Date (ipl data24 ver17.csv)' datatype='string' name='[Date (ipl_data24_ver17.csv)]' role='dimension' type='nominal' />
+      <column caption='First Innings Score (ipl data24 ver17.csv)' datatype='integer' name='[First Innings Score (ipl_data24_ver17.csv)]' role='measure' type='quantitative' />
+      <column caption='Match Number (ipl data24 ver17.csv)' datatype='integer' name='[Match Number (ipl_data24_ver17.csv)]' role='dimension' type='ordinal' />
+      <column datatype='integer' name='[Match Number]' role='dimension' type='ordinal' />
+      <column caption='Second Innings Score (ipl data24 ver17.csv)' datatype='integer' name='[Second Innings Score (ipl_data24_ver17.csv)]' role='measure' type='quantitative' />
+      <column caption='Toss Decision (ipl data24 ver17.csv)' datatype='string' name='[Toss Decision (ipl_data24_ver17.csv)]' role='dimension' type='nominal' />
+      <column caption='Toss winning team (ipl data24 ver17.csv)' datatype='string' name='[Toss winning team (ipl_data24_ver17.csv)]' role='dimension' type='nominal' />
+      <column caption='Venue (ipl data24 ver17.csv)' datatype='string' name='[Venue (ipl_data24_ver17.csv)]' role='dimension' type='nominal' />
+      <column caption='Wickets Lost (2) (ipl data24 ver17.csv)' datatype='integer' name='[Wickets Lost (2) (ipl_data24_ver17.csv)]' role='measure' type='quantitative' />
+      <column caption='Wickets Lost (ipl data24 ver17.csv)' datatype='integer' name='[Wickets Lost (ipl_data24_ver17.csv)]' role='measure' type='quantitative' />
+      <column caption='Winning Team (ipl data24 ver17.csv)' datatype='string' name='[Winning Team (ipl_data24_ver17.csv)]' role='dimension' type='nominal' />
+      <column caption='Won By (ipl data24 ver17.csv)' datatype='string' name='[Won By (ipl_data24_ver17.csv)]' role='dimension' type='nominal' />
+      <_.fcp.ObjectModelTableType.true...column caption='IPL23dataset.csv' datatype='table' name='[__tableau_internal_object_id__].[IPL23dataset.csv_55B804E84BA146E4A0B111BD77A5C6AA]' role='measure' type='quantitative' />
+      <_.fcp.ObjectModelTableType.true...column caption='ipl_data24_ver17.csv' datatype='table' name='[__tableau_internal_object_id__].[ipl_data24_ver17.csv_7C7E4617BD6D4E78BE45EAA491157205]' role='measure' type='quantitative' />
+      <layout _.fcp.SchemaViewerObjectModel.false...dim-percentage='0.5' _.fcp.SchemaViewerObjectModel.false...measure-percentage='0.4' dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
+      </semantic-values>
+      <_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+        <objects>
+          <object caption='IPL23dataset.csv' id='IPL23dataset.csv_55B804E84BA146E4A0B111BD77A5C6AA'>
+            <properties context=''>
+              <relation connection='textscan.1735cop0vymj1r1b7pjkd0uqv8vn' name='IPL23dataset.csv' table='[IPL23dataset#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+                  <column datatype='integer' name='Match Number' ordinal='0' />
+                  <column datatype='string' name='Date' ordinal='1' />
+                  <column datatype='string' name='Toss winning team' ordinal='2' />
+                  <column datatype='string' name='Toss Decision' ordinal='3' />
+                  <column datatype='string' name='Batting First' ordinal='4' />
+                  <column datatype='integer' name='First Innings Score' ordinal='5' />
+                  <column datatype='integer' name='Wickets Lost' ordinal='6' />
+                  <column datatype='real' name='Overs in First innings' ordinal='7' />
+                  <column datatype='string' name='Batting Second' ordinal='8' />
+                  <column datatype='integer' name='Second Innings Score' ordinal='9' />
+                  <column datatype='integer' name='Wickets Lost (2)' ordinal='10' />
+                  <column datatype='real' name='Overs in Second innings' ordinal='11' />
+                  <column datatype='string' name='Winning Team' ordinal='12' />
+                  <column datatype='string' name='Won By' ordinal='13' />
+                  <column datatype='string' name='Venue' ordinal='14' />
+                </columns>
+              </relation>
+            </properties>
+          </object>
+          <object caption='ipl_data24_ver17.csv' id='ipl_data24_ver17.csv_7C7E4617BD6D4E78BE45EAA491157205'>
+            <properties context=''>
+              <relation connection='textscan.1735cop0vymj1r1b7pjkd0uqv8vn' name='ipl_data24_ver17.csv' table='[ipl_data24_ver17#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+                  <column datatype='integer' name='Match Number' ordinal='0' />
+                  <column datatype='string' name='Date' ordinal='1' />
+                  <column datatype='string' name='Toss winning team' ordinal='2' />
+                  <column datatype='string' name='Toss Decision' ordinal='3' />
+                  <column datatype='string' name='Batting First' ordinal='4' />
+                  <column datatype='integer' name='First Innings Score' ordinal='5' />
+                  <column datatype='integer' name='Wickets Lost' ordinal='6' />
+                  <column datatype='real' name='Overs First Innings' ordinal='7' />
+                  <column datatype='string' name='Batting Second' ordinal='8' />
+                  <column datatype='integer' name='Second Innings Score' ordinal='9' />
+                  <column datatype='integer' name='Wickets Lost (2)' ordinal='10' />
+                  <column datatype='real' name='Overs Second Innings' ordinal='11' />
+                  <column datatype='string' name='Winning Team' ordinal='12' />
+                  <column datatype='string' name='Won By' ordinal='13' />
+                  <column datatype='string' name='Venue' ordinal='14' />
+                </columns>
+              </relation>
+            </properties>
+          </object>
+        </objects>
+        <relationships>
+          <relationship>
+            <expression op='='>
+              <expression op='[Match Number]' />
+              <expression op='[Match Number (ipl_data24_ver17.csv)]' />
+            </expression>
+            <first-end-point object-id='IPL23dataset.csv_55B804E84BA146E4A0B111BD77A5C6AA' />
+            <second-end-point object-id='ipl_data24_ver17.csv_7C7E4617BD6D4E78BE45EAA491157205' />
+          </relationship>
+        </relationships>
+      </_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+    </datasource>
+  </datasources>
+  <worksheets>
+    <worksheet name='Sheet 1'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='ipl_data24_ver17+' name='federated.0qxcya41k5h7p81gjyrrn1p1atqc' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0qxcya41k5h7p81gjyrrn1p1atqc'>
+            <column caption='RR 2023(1)' datatype='real' datatype-customized='true' name='[Calculation_1174313616832671748]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='WINDOW_AVG(SUM([First Innings Score]) / SUM([Overs in First innings]), 0, 40)'>
+                <table-calc ordering-type='Rows' />
+              </calculation>
+            </column>
+            <column caption='RR 2024(1)' datatype='real' datatype-customized='true' name='[Calculation_1174313616832950277]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='WINDOW_AVG(SUM([First Innings Score (ipl_data24_ver17.csv)]) / SUM([Overs First Innings]), 0, 40)'>
+                <table-calc ordering-type='Rows' />
+              </calculation>
+            </column>
+            <column caption='RR 2023(2)' datatype='real' datatype-customized='true' name='[Calculation_1174313616835407878]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='WINDOW_AVG(SUM([Second Innings Score]) / SUM([Overs in Second innings]), 0, 40)'>
+                <table-calc ordering-type='Rows' />
+              </calculation>
+            </column>
+            <column caption='RR 2024(2)' datatype='real' datatype-customized='true' name='[Calculation_1174313616835686407]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='WINDOW_AVG(SUM([First Innings Score (ipl_data24_ver17.csv)]) / SUM([Overs Second Innings]), 0, 40)'>
+                <table-calc ordering-type='Rows' />
+              </calculation>
+            </column>
+            <column caption='First Innings Score (ipl data24 ver17.csv)' datatype='integer' name='[First Innings Score (ipl_data24_ver17.csv)]' role='measure' type='quantitative' />
+            <column datatype='integer' name='[First Innings Score]' role='dimension' type='ordinal' />
+            <column datatype='real' name='[Overs First Innings]' role='measure' type='quantitative' />
+            <column datatype='real' name='[Overs Second Innings]' role='measure' type='quantitative' />
+            <column datatype='real' name='[Overs in First innings]' role='measure' type='quantitative' />
+            <column datatype='real' name='[Overs in Second innings]' role='measure' type='quantitative' />
+            <column datatype='integer' name='[Second Innings Score]' role='dimension' type='ordinal' />
+            <column-instance column='[Calculation_1174313616832671748]' derivation='User' name='[usr:Calculation_1174313616832671748:qk:1]' pivot='key' type='quantitative'>
+              <table-calc ordering-field='' ordering-type='Field' />
+            </column-instance>
+            <column-instance column='[Calculation_1174313616832950277]' derivation='User' name='[usr:Calculation_1174313616832950277:qk:1]' pivot='key' type='quantitative'>
+              <table-calc ordering-field='' ordering-type='Field' />
+            </column-instance>
+            <column-instance column='[Calculation_1174313616835407878]' derivation='User' name='[usr:Calculation_1174313616835407878:qk]' pivot='key' type='quantitative'>
+              <table-calc ordering-type='Rows' />
+            </column-instance>
+            <column-instance column='[Calculation_1174313616835686407]' derivation='User' name='[usr:Calculation_1174313616835686407:qk]' pivot='key' type='quantitative'>
+              <table-calc ordering-type='Rows' />
+            </column-instance>
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.0qxcya41k5h7p81gjyrrn1p1atqc].[:Measure Names]'>
+            <groupfilter function='union' user:op='manual'>
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.0qxcya41k5h7p81gjyrrn1p1atqc].[usr:Calculation_1174313616832671748:qk:1]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.0qxcya41k5h7p81gjyrrn1p1atqc].[usr:Calculation_1174313616832950277:qk:1]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.0qxcya41k5h7p81gjyrrn1p1atqc].[usr:Calculation_1174313616835407878:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.0qxcya41k5h7p81gjyrrn1p1atqc].[usr:Calculation_1174313616835686407:qk]&quot;' />
+            </groupfilter>
+          </filter>
+          <manual-sort column='[federated.0qxcya41k5h7p81gjyrrn1p1atqc].[:Measure Names]' direction='ASC'>
+            <dictionary>
+              <bucket>&quot;[federated.0qxcya41k5h7p81gjyrrn1p1atqc].[usr:Calculation_1174313616832671748:qk:1]&quot;</bucket>
+              <bucket>&quot;[federated.0qxcya41k5h7p81gjyrrn1p1atqc].[usr:Calculation_1174313616832950277:qk:1]&quot;</bucket>
+              <bucket>&quot;[federated.0qxcya41k5h7p81gjyrrn1p1atqc].[usr:Calculation_1174313616835407878:qk]&quot;</bucket>
+              <bucket>&quot;[federated.0qxcya41k5h7p81gjyrrn1p1atqc].[usr:Calculation_1174313616835686407:qk]&quot;</bucket>
+            </dictionary>
+          </manual-sort>
+          <slices>
+            <column>[federated.0qxcya41k5h7p81gjyrrn1p1atqc].[:Measure Names]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.0qxcya41k5h7p81gjyrrn1p1atqc].[Multiple Values]</rows>
+        <cols>[federated.0qxcya41k5h7p81gjyrrn1p1atqc].[:Measure Names]</cols>
+      </table>
+      <simple-id uuid='{420EB835-F574-443B-ADA3-304C9A0C7542}' />
+    </worksheet>
+    <worksheet name='Sheet 2'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='ipl_data24_ver17+' name='federated.0qxcya41k5h7p81gjyrrn1p1atqc' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0qxcya41k5h7p81gjyrrn1p1atqc'>
+            <column caption='Avg  2023(1)' datatype='real' datatype-customized='true' name='[Calculation_1174313616837283848]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='WINDOW_AVG(SUM([First Innings Score]) / 40, 0, 40)'>
+                <table-calc ordering-type='Rows' />
+              </calculation>
+            </column>
+            <column caption='Avg 2024(1)' datatype='real' datatype-customized='true' name='[Calculation_1174313616839692297]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='WINDOW_AVG(SUM([First Innings Score (ipl_data24_ver17.csv)]) / 40, 0, 40)'>
+                <table-calc ordering-type='Rows' />
+              </calculation>
+            </column>
+            <column caption='Avg 2023(2)' datatype='real' datatype-customized='true' name='[Calculation_1174313616840572938]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='WINDOW_AVG(SUM([Second Innings Score]) / 40, 0, 40)'>
+                <table-calc ordering-type='Rows' />
+              </calculation>
+            </column>
+            <column caption='Avg 2024(2)' datatype='real' datatype-customized='true' name='[Calculation_1174313616840708107]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='WINDOW_AVG(SUM([Second Innings Score (ipl_data24_ver17.csv)]) / 40, 0, 40)'>
+                <table-calc ordering-type='Rows' />
+              </calculation>
+            </column>
+            <column caption='First Innings Score (ipl data24 ver17.csv)' datatype='integer' name='[First Innings Score (ipl_data24_ver17.csv)]' role='measure' type='quantitative' />
+            <column datatype='integer' name='[First Innings Score]' role='dimension' type='ordinal' />
+            <column caption='Second Innings Score (ipl data24 ver17.csv)' datatype='integer' name='[Second Innings Score (ipl_data24_ver17.csv)]' role='measure' type='quantitative' />
+            <column datatype='integer' name='[Second Innings Score]' role='dimension' type='ordinal' />
+            <column-instance column='[Calculation_1174313616837283848]' derivation='User' name='[usr:Calculation_1174313616837283848:qk]' pivot='key' type='quantitative'>
+              <table-calc ordering-type='Rows' />
+            </column-instance>
+            <column-instance column='[Calculation_1174313616839692297]' derivation='User' name='[usr:Calculation_1174313616839692297:qk]' pivot='key' type='quantitative'>
+              <table-calc ordering-type='Rows' />
+            </column-instance>
+            <column-instance column='[Calculation_1174313616840572938]' derivation='User' name='[usr:Calculation_1174313616840572938:qk]' pivot='key' type='quantitative'>
+              <table-calc ordering-type='Rows' />
+            </column-instance>
+            <column-instance column='[Calculation_1174313616840708107]' derivation='User' name='[usr:Calculation_1174313616840708107:qk]' pivot='key' type='quantitative'>
+              <table-calc ordering-type='Rows' />
+            </column-instance>
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.0qxcya41k5h7p81gjyrrn1p1atqc].[:Measure Names]'>
+            <groupfilter function='union' user:op='manual'>
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.0qxcya41k5h7p81gjyrrn1p1atqc].[usr:Calculation_1174313616837283848:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.0qxcya41k5h7p81gjyrrn1p1atqc].[usr:Calculation_1174313616840572938:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.0qxcya41k5h7p81gjyrrn1p1atqc].[usr:Calculation_1174313616839692297:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.0qxcya41k5h7p81gjyrrn1p1atqc].[usr:Calculation_1174313616840708107:qk]&quot;' />
+            </groupfilter>
+          </filter>
+          <slices>
+            <column>[federated.0qxcya41k5h7p81gjyrrn1p1atqc].[:Measure Names]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='width' field='[federated.0qxcya41k5h7p81gjyrrn1p1atqc].[:Measure Names]' value='59' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane id='6' selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Bar' />
+            <mark-sizing mark-sizing-setting='marks-scaling-off' />
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-color' value='#69aaa5' />
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='false' />
+                <format attr='size' value='0.92254143953323364' />
+              </style-rule>
+              <style-rule element='pane'>
+                <format attr='minwidth' value='-1' />
+                <format attr='maxwidth' value='-1' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.0qxcya41k5h7p81gjyrrn1p1atqc].[Multiple Values]</rows>
+        <cols>[federated.0qxcya41k5h7p81gjyrrn1p1atqc].[:Measure Names]</cols>
+      </table>
+      <simple-id uuid='{F4A7E4E5-AC69-482D-876F-9D58053FF683}' />
+    </worksheet>
+  </worksheets>
+  <windows saved-dpi-scale-factor='1.25' source-height='37'>
+    <window class='worksheet' maximized='true' name='Sheet 1'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+            <card type='measures' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='33'>
+            <card type='columns' />
+          </strip>
+          <strip size='33'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.0qxcya41k5h7p81gjyrrn1p1atqc].[:Measure Names]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{F813A21B-1B6E-40E7-9E19-D722BD17F256}' />
+    </window>
+    <window class='worksheet' name='Sheet 2'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card size='26' type='pages' />
+            <card size='44' type='filters' />
+            <card size='168' type='marks' />
+            <card size='108' type='measures' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.0qxcya41k5h7p81gjyrrn1p1atqc].[:Measure Names]</field>
+            <field>[federated.0qxcya41k5h7p81gjyrrn1p1atqc].[none:First Innings Score:nk]</field>
+            <field>[federated.0qxcya41k5h7p81gjyrrn1p1atqc].[none:Match Number:ok]</field>
+            <field>[federated.0qxcya41k5h7p81gjyrrn1p1atqc].[none:Second Innings Score:ok]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{B43E76B1-1C52-42E9-9820-E47BA3B9B919}' />
+    </window>
+  </windows>
+  <thumbnails>
+    <thumbnail height='192' name='Sheet 1' width='192'>
+      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
+    </thumbnail>
+    <thumbnail height='192' name='Sheet 2' width='192'>
+      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
+      EgBhahIAYWoSAGFqEgBhahIAYWoSAGFqEgBhahIAYWoSAGFqEgBhahIAYWoSAGFqEgBhahIA
+      YWoSAGFqiesRZmh0NNayfcPHtBZM5YGJRef8UufAhmX8c5vCM3PvJ02PcnL/NtZ9epgINkpG
+      T2bcsAKsElcRZ4nrEXa6hYP1zeTm5dJx7h+yYdDduJ/Dfi8Dr+ppWBjuaqXySBvT7vlPMmjn
+      /Y+30zogm6s89kSVK0wiYd+pNu9VlI+7geLCLM5tShgN+djy6TFGjy0l1dbTGTDQ1YrDM5BM
+      tw2bO5NBHgetXYFElSpMJLltUo0oJw7sxn71deSl/m8puqLjsLno6ZSp4LLZCSo9PV9DoVDs
+      fZqm0d3dfQHL6WOZun5hy7lAkUgkLvOIV01xqSccv3qgpxF4XxgGF1RPUgMQaa/jo3U7ILue
+      2h1BamubaXvLxs3DMwlFAvT0OTYIRMJYjZ6tg8PhiE0fCoV6/fyF+tZyFkVVcbni16Y1Hv10
+      bTZb3GqKSz32+NUDoKp92zlRFC6onqQGwJpxNXOe+V7PH3q4lbff+pRJd96Mp7uNA1UVNPuH
+      kmW0UuMLMT7VncxSxRUqYQHoOLGPteu20Xa6g9awg/864GL8N+ZwTfaZbx/Djtudgt1qxe7O
+      5PrhBax7601COBg+djKZKZe+I7wwn4QFIL1wOPd8Z/gXv8Geye13T+75t2rlqiFj+daQsQmp
+      TZiXnFkXpiYBEKYmARCmJgEQpiYBEKYmARCmJgEQpiYBEKYmARCmJgEQpiYBEKYmARCmJgEQ
+      piYBEKYmARCmJgEQpiYBEKYmARCmJgEQpiYBEKYmARCmJgEQpiYBEKYmARCmJgEQpiYBEKYm
+      ARCmJgEQpiYBEKYmARCmJgEQppbQDjGGYRAJdhFRHLidtjOv6QS7/HSHoygWB2lpbiwKGFqE
+      zs5OoljxeDzYLH3scyTE50hgn+AoTdW72bhhI8HiO3lw0mAAmg9vZ/O+BlRVJRwIMKD8dsYO
+      cFO9fR2VJwPYCZNSMIrJY0uwWxJWrTCJBPYJbqMpksINY4azNfC/e16OrKuZevsoUp02wv79
+      vPdBNR3p+RxqU7njrhmkEGDtmk841dmffunORJUrTCJhAbB5cynz5uI/0oJyTvdKb1YuYGBo
+      Yer3HiGtpBw92IzDlYfLbsGCizyXA18wSD+cGEbvnqef/flSSdRyLsbXrabLsZ7k9gmGnk7x
+      bfVs2rwDCq/jlrJcOppOYbc5Y32Cnef0CY5EIrEV03W9V9/gL15GH0u80OVcoHj1CY5XTfHq
+      ExzPz0g3+t4n+ELqSXoAgr6TbNhSxaBRkygqyEQFrNgIhk+jGwYqOqdDQdz0HADY7fbYtIns
+      E+x0xm/3K159guNVU7z6BMfzM1KVvvcJvpB6knwaVOPY/+wkfeTNlPTLwqr2/KWmeLLR2o9w
+      vD1EqL2eIx0a2Z6U5JYqrkgJ7xPcEQwT0g7yXwc+Yfw3vklHR4CqNf/NvjO7O4VDJ3BzeTE3
+      3zSKNR8tZzMeyidPJcOV9I2VuAIlv0/wfzxA+ee835E7mLvvH3zJ6xLmJleChalJAISpSQCE
+      qUkAhKlJAISpSQCEqUkAhKlJAISpSQCEqf1/a6adZxrM/xoAAAAASUVORK5CYII=
+    </thumbnail>
+  </thumbnails>
+</workbook>
